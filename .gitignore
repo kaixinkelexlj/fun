@@ -4,3 +4,6 @@
 /spring-boot-fun/.idea/misc.xml
 /spring-boot-fun/.idea/modules.xml
 /spring-boot-fun/.idea/workspace.xml
+/spring-boot-fun/spring-boot-fun-starter/target
+/spring-boot-fun/spring-boot-fun-service/target
+/spring-boot-fun/spring-boot-fun-client/target
