@@ -2,8 +2,6 @@ package com.fun.starter.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ImportResource;
 
 
@@ -16,10 +14,10 @@ public class Application {
     }
 
 
-    @Bean
+    /*@Bean
     public FilterRegistrationBean registerFilter(){
         FilterRegistrationBean bean = new FilterRegistrationBean();
         return bean;
-    }
+    }*/
 
 }
