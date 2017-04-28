@@ -1,6 +1,7 @@
 package com.fun.test;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.context.annotation.PropertySource;
 
 /**
@@ -8,7 +9,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @SpringBootApplication
 @PropertySource(value = { "classpath:application.properties" })
-//@ImportResource("classpath:application-context.xml")
+@ImportResource("classpath:application-context.xml")
 public class TestApplication {
 
 }
