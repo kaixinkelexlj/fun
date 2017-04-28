@@ -11,30 +11,34 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>spring-boot-fun-starter</artifactId>
+    <artifactId>spring-boot-fun-test</artifactId>
     <packaging>jar</packaging>
-    <name>spring-boot-fun-starter</name>
+    <name>spring-boot-fun-test</name>
 
     <dependencies>
-        <dependency>
+		<dependency>
             <groupId>com.fun</groupId>
-            <artifactId>spring-boot-fun-service</artifactId>
+            <artifactId>spring-boot-fun-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-velocity</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

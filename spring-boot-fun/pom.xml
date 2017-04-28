@@ -22,12 +22,16 @@
         <spring-test.version>4.3.2.RELEASE</spring-test.version>
         <junit.version>4.12</junit.version>
         <maven-antrun.version>1.8</maven-antrun.version>
+		<!-- Database access -->
+		<commons-dbcp.version>1.4</commons-dbcp.version>
+		<mysql.version>5.1.22</mysql.version>
     </properties>
 	
 	<modules>
         <module>spring-boot-fun-service</module>
         <module>spring-boot-fun-starter</module>
 		<module>spring-boot-fun-client</module>
+		<module>spring-boot-fun-test</module>
     </modules>
 	
 	<dependencyManagement>
@@ -61,7 +65,7 @@
             </dependency>
 			<dependency>
                 <groupId>com.fun</groupId>
-                <artifactId>spring-boot-fun-client</artifactId>
+                <artifactId>spring-boot-fun-test</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -75,6 +79,20 @@
                 <artifactId>junit</artifactId>
                 <version>${junit.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <!-- Database connection pool -->
+            <dependency>
+                <groupId>commons-dbcp</groupId>
+                <artifactId>commons-dbcp</artifactId>
+                <version>${commons-dbcp.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+
+            <!-- MySQL JDBC Connector -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
