@@ -10,3 +10,5 @@
 /spring-boot-fun/spring-boot-fun-test/target
 /spring-boot-fun/spring-boot-fun-test/spring-boot-fun-test.iml
 /mybatis-generator/.idea
+/mybatis-generator/src/main/java
+/mybatis-generator/target
